@@ -712,6 +712,27 @@
   }
 }
 
+@media (max-width: 900px) {
+  .archive-case-grid,
+  .farawave-page .archive-case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fixture-explainer,
+  .setup-detail-grid,
+  .farawave-page .setup-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-hero-grid .evidence-hero {
+    grid-template-rows: minmax(240px, auto) auto;
+  }
+}
+
 @media (max-width: 760px) {
   .archive-case-grid {
     grid-template-columns: 1fr;
@@ -760,5 +781,38 @@
 
   .patient-comparison-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .archive-main,
+  .farawave-page .archive-main {
+    width: calc(100% - 28px);
+    padding-bottom: 70px;
+  }
+
+  .archive-copy-block,
+  .farawave-page .archive-copy-block,
+  .evidence-card,
+  .farawave-page .evidence-card {
+    padding: 16px;
+  }
+
+  .archive-meta,
+  .archive-tags {
+    padding: 16px;
+  }
+
+  .bonding-system-grid,
+  .patient-comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-comparison-grid figure {
+    grid-template-rows: minmax(220px, auto) auto;
+  }
+
+  .component-legend {
+    columns: 1;
   }
 }

@@ -70,3 +70,24 @@
   transform: none;
   opacity: 1;
 }
+
+@media (max-width: 900px) {
+  .project-card.software-project-card {
+    grid-template-rows: auto auto;
+    min-height: auto;
+  }
+
+  .project-card.software-project-card .thumb {
+    height: auto;
+    min-height: 240px;
+    padding: 12px;
+  }
+
+  .project-card.software-project-card .body {
+    padding: 18px;
+  }
+
+  .project-card .thumb.focus-sheath-thumb {
+    height: 220px;
+  }
+}
