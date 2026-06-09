@@ -91,3 +91,39 @@
     height: 220px;
   }
 }
+
+@media (max-width: 1180px) and (min-width: 721px) {
+  .project-card.software-project-card {
+    grid-template-rows: clamp(390px, 48vw, 520px) auto;
+  }
+
+  .project-card.software-project-card .thumb {
+    height: clamp(390px, 48vw, 520px);
+    min-height: 0;
+  }
+
+  .project-card.software-project-card .body {
+    grid-template-rows: auto auto auto;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 720px) {
+  .project-card.software-project-card .thumb {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
+
+  .project-card.software-project-card .body {
+    grid-template-rows: auto auto auto;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  .project-card.software-project-card .thumb {
+    aspect-ratio: 3 / 4;
+    padding: 8px;
+  }
+}

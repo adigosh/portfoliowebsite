@@ -816,3 +816,131 @@
     columns: 1;
   }
 }
+
+@media (max-width: 1180px) and (min-width: 901px) {
+  .farawave-page .archive-main {
+    width: min(1120px, calc(100% - 36px));
+  }
+
+  .farawave-page .archive-case-grid {
+    grid-template-columns: minmax(330px, .42fr) minmax(0, .58fr);
+    gap: 24px;
+  }
+
+  .stage-image-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) and (min-width: 641px) {
+  .archive-case-copy {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .archive-copy-block {
+    grid-column: 1 / -1;
+  }
+
+  .evidence-image-grid,
+  .bonding-system-grid,
+  .patient-comparison-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .stage-image-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stage-image-grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .archive-main .project-jump-nav {
+    margin-bottom: 24px;
+  }
+
+  .archive-meta div {
+    overflow-wrap: anywhere;
+  }
+
+  .archive-copy-block h3,
+  .evidence-copy h3,
+  .archive-copy-block p,
+  .evidence-copy p,
+  .archive-bullets,
+  .evidence-caption,
+  .figure-citation {
+    overflow-wrap: anywhere;
+  }
+
+  .evidence-hero,
+  .evidence-card {
+    width: 100%;
+  }
+
+  .evidence-hero img,
+  .evidence-card img,
+  .evidence-card video,
+  .environmental-evidence .evidence-card > img {
+    width: 100%;
+    height: auto;
+    max-height: min(72svh, 520px);
+  }
+
+  .bonding-system-grid img {
+    height: auto;
+    max-height: 320px;
+  }
+
+  .patient-hero-grid .evidence-hero,
+  .patient-comparison-grid figure,
+  .stage-image-grid figure {
+    grid-template-rows: auto auto;
+  }
+
+  .patient-comparison-grid .patient-media-box,
+  .stage-image-grid figure > img {
+    min-height: 0;
+  }
+
+  .farawave-page .archive-copy-block p,
+  .farawave-page .archive-bullets,
+  .farawave-page .evidence-copy p,
+  .farawave-page .evidence-caption {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .archive-footer {
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
+    text-align: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .archive-main,
+  .farawave-page .archive-main {
+    width: calc(100% - 22px);
+  }
+
+  .archive-copy-block,
+  .farawave-page .archive-copy-block,
+  .evidence-card,
+  .farawave-page .evidence-card,
+  .archive-meta,
+  .archive-tags {
+    padding: 13px;
+  }
+
+  .evidence-image-grid figure,
+  .patient-comparison-grid figure,
+  .stage-image-grid figure,
+  .setup-detail-card,
+  .fixture-components {
+    padding: 10px;
+  }
+}
