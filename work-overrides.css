@@ -127,3 +127,47 @@
     padding: 8px;
   }
 }
+
+/* Keep Medical Device R&D cards aligned without per-card offsets. */
+.medical-device-rd .project-grid {
+  align-items: stretch;
+}
+
+.medical-device-rd .project-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+
+.medical-device-rd .project-card .thumb {
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
+.medical-device-rd .project-card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.medical-device-rd .project-card .body {
+  display: grid;
+  grid-template-rows: minmax(3.3em, auto) 1fr auto;
+  gap: 16px;
+  align-content: start;
+}
+
+.medical-device-rd .project-card .body h3,
+.medical-device-rd .project-card .body p {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .medical-device-rd .project-card {
+    height: auto;
+  }
+
+  .medical-device-rd .project-card .body {
+    grid-template-rows: auto auto auto;
+  }
+}
