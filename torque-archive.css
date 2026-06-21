@@ -33,6 +33,17 @@
   align-items: start;
 }
 
+.archive-case-grid > *,
+.archive-case-copy > *,
+.archive-evidence > *,
+.evidence-image-grid > *,
+.patient-comparison-grid > *,
+.setup-detail-grid > *,
+.stage-image-grid > *,
+.fixture-explainer > * {
+  min-width: 0;
+}
+
 .archive-case-copy,
 .archive-meta,
 .archive-copy-block,
@@ -365,6 +376,21 @@
   max-height: 520px;
 }
 
+.patient-app-page .patient-journey-card .evidence-copy h3,
+.patient-app-page .patient-comparison-grid figcaption strong,
+.patient-app-page .patient-ai-card .evidence-copy h3 {
+  color: #e8f1fb;
+}
+
+.patient-app-page .patient-ai-card .evidence-copy h3 {
+  font-size: 18px;
+}
+
+.patient-app-page .patient-ai-card .evidence-copy p {
+  font-size: 14px;
+  line-height: 1.65;
+}
+
 .fixture-explainer {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(190px, .65fr);
@@ -589,6 +615,12 @@
 
 .farawave-page .evidence-copy {
   max-width: none;
+}
+
+.farawave-page .evidence-copy h3,
+.farawave-page .setup-detail-card h4,
+.farawave-page .variables-tested h4 {
+  color: #e8f1fb;
 }
 
 .farawave-page .evidence-copy h3 {

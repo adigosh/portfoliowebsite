@@ -2,6 +2,13 @@
   padding: 54px 0 82px;
 }
 
+.overview-grid > *,
+.process-card-grid > *,
+.showcase-grid > *,
+.meta-chips > * {
+  min-width: 0;
+}
+
 .case-hero {
   border-bottom: 1px solid var(--line2);
   padding: 28px 0 34px;
@@ -304,6 +311,7 @@
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
   }
 
   .project-jump-nav a {
