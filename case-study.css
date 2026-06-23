@@ -369,9 +369,10 @@
   text-transform: uppercase;
 }
 
-.patient-ai-card video {
+.patient-ai-card > img {
   width: 100%;
   max-height: 520px;
+  object-fit: contain;
 }
 
 .patient-app-page .patient-journey-card .evidence-copy h3,
