@@ -110,14 +110,6 @@
   }
 }
 
-/* Keep Medical Device R&D cards aligned without per-card offsets. */
-.medical-device-rd .project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: stretch;
-  gap: 24px;
-}
-
 /* Force equal image and card heights for Biomedical Instrumentation. */
 .biomedical-instrumentation .project-grid {
   display: grid;
@@ -179,65 +171,5 @@
 
   .biomedical-instrumentation .project-card {
     grid-template-rows: clamp(220px, 62vw, 260px) auto;
-  }
-}
-
-.medical-device-rd .project-card {
-  display: grid;
-  grid-template-rows: 340px 1fr;
-  height: 100%;
-  align-self: stretch;
-}
-
-.medical-device-rd .project-card .thumb {
-  width: 100%;
-  height: 340px;
-  min-height: 0;
-  aspect-ratio: auto;
-  overflow: hidden;
-  display: grid;
-}
-
-.medical-device-rd .project-card .thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
-.medical-device-rd .project-card .body {
-  display: grid;
-  grid-template-rows: minmax(3.3em, auto) 1fr auto;
-  gap: 16px;
-  align-content: start;
-}
-
-.medical-device-rd .project-card .body h3,
-.medical-device-rd .project-card .body p {
-  margin: 0;
-}
-
-.medical-device-rd .project-card:hover,
-.medical-device-rd .project-card:hover .thumb img {
-  transform: none;
-}
-
-@media (max-width: 720px) {
-  .medical-device-rd .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .medical-device-rd .project-card {
-    grid-template-rows: 240px 1fr;
-    height: auto;
-  }
-
-  .medical-device-rd .project-card .thumb {
-    height: 240px;
-  }
-
-  .medical-device-rd .project-card .body {
-    grid-template-rows: auto auto auto;
   }
 }

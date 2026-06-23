@@ -38,9 +38,7 @@
 .archive-evidence > *,
 .evidence-image-grid > *,
 .patient-comparison-grid > *,
-.setup-detail-grid > *,
-.stage-image-grid > *,
-.fixture-explainer > * {
+.stage-image-grid > * {
   min-width: 0;
 }
 
@@ -391,298 +389,6 @@
   line-height: 1.65;
 }
 
-.fixture-explainer {
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(190px, .65fr);
-  gap: 14px;
-  align-items: stretch;
-}
-
-.fixture-explainer img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 340px;
-}
-
-.fixture-components {
-  border: 1px solid rgba(19, 231, 242, .12);
-  background: rgba(4, 10, 18, .68);
-  padding: 14px;
-}
-
-.fixture-components h4 {
-  margin: 0 0 12px;
-  color: var(--cyan);
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-}
-
-.fixture-components p {
-  margin: 0 0 12px;
-  color: #c4d0dc;
-  font-size: 12px;
-  line-height: 1.55;
-}
-
-.fixture-components ol,
-.fixture-components ul {
-  margin: 0;
-  padding-left: 18px;
-  color: #c4d0dc;
-  font-size: 12px;
-  line-height: 1.65;
-}
-
-.farawave-interface-card,
-.farawave-setup-card {
-  width: 100%;
-}
-
-.farawave-interface-card {
-  gap: 12px;
-}
-
-.farawave-interface-card img {
-  width: 100%;
-  max-height: 440px;
-  object-fit: contain;
-}
-
-.farawave-text-card {
-  width: 100%;
-}
-
-.farawave-text-card .evidence-copy {
-  max-width: none;
-}
-
-.farawave-setup-card {
-  gap: 16px;
-}
-
-.farawave-setup-card .evidence-copy {
-  max-width: none;
-}
-
-.farawave-setup-figure {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 0;
-  border: 1px solid rgba(19, 231, 242, .12);
-  background: rgba(4, 10, 18, .68);
-  padding: 12px;
-}
-
-.farawave-setup-figure img {
-  width: 100%;
-  height: auto;
-  max-height: 720px;
-  object-fit: contain;
-}
-
-.setup-detail-grid {
-  display: grid;
-  grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
-  gap: 14px;
-  width: 100%;
-  align-items: stretch;
-}
-
-.setup-detail-card {
-  border: 1px solid rgba(19, 231, 242, .12);
-  background: rgba(4, 10, 18, .68);
-  padding: 16px;
-}
-
-.setup-detail-card h4 {
-  margin: 0 0 12px;
-  color: var(--cyan);
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-}
-
-.setup-detail-card p {
-  margin: 0 0 12px;
-  color: #c4d0dc;
-  font-size: 12px;
-  line-height: 1.55;
-}
-
-.setup-detail-card ol,
-.setup-detail-card ul {
-  color: #c4d0dc;
-  font-size: 12px;
-  line-height: 1.65;
-}
-
-.variables-tested {
-  border: 1px solid rgba(19, 231, 242, .12);
-  background: rgba(19, 231, 242, .05);
-  margin: 14px 0;
-  padding: 12px;
-}
-
-.compact-callout {
-  margin-bottom: 0;
-}
-
-.variables-tested h4 {
-  margin-bottom: 8px;
-}
-
-.variables-tested ul {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 6px 16px;
-  padding-left: 16px;
-}
-
-.component-legend {
-  columns: 2;
-  column-gap: 24px;
-}
-
-.component-legend li {
-  break-inside: avoid;
-  margin: 0 0 4px;
-}
-
-.legend-note {
-  color: #8ea0b3;
-  font-family: var(--mono);
-  font-size: 10px;
-}
-
-.workflow-chain {
-  display: grid;
-  gap: 10px;
-}
-
-.workflow-chain span {
-  border: 1px solid rgba(19, 231, 242, .16);
-  background: rgba(4, 10, 18, .72);
-  color: #dce7f3;
-  font-family: var(--mono);
-  font-size: 11px;
-  font-weight: 800;
-  padding: 10px 12px;
-  position: relative;
-  text-transform: uppercase;
-}
-
-.workflow-chain span:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  left: 22px;
-  bottom: -10px;
-  width: 1px;
-  height: 10px;
-  background: var(--cyan);
-}
-
-.farawave-page .archive-main {
-  width: min(1320px, calc(100% - 48px));
-}
-
-.farawave-page .archive-case-grid {
-  grid-template-columns: minmax(390px, .38fr) minmax(0, .62fr);
-  gap: 34px;
-}
-
-.farawave-page .archive-evidence {
-  gap: 34px;
-}
-
-.farawave-page .archive-copy-block {
-  padding: 28px;
-}
-
-.farawave-page .archive-copy-block p,
-.farawave-page .archive-bullets {
-  font-size: 15px;
-  line-height: 1.72;
-}
-
-.farawave-page .evidence-card {
-  padding: 24px;
-}
-
-.farawave-page .evidence-copy {
-  max-width: none;
-}
-
-.farawave-page .evidence-copy h3,
-.farawave-page .setup-detail-card h4,
-.farawave-page .variables-tested h4 {
-  color: #e8f1fb;
-}
-
-.farawave-page .evidence-copy h3 {
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-
-.farawave-page .evidence-copy p,
-.farawave-page .evidence-caption {
-  font-size: 14px;
-  line-height: 1.65;
-}
-
-.farawave-page .farawave-setup-card {
-  gap: 22px;
-}
-
-.farawave-page .farawave-setup-figure {
-  padding: 16px;
-}
-
-.farawave-page .farawave-setup-figure img {
-  max-height: 780px;
-}
-
-.farawave-page .setup-detail-grid {
-  gap: 18px;
-  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
-}
-
-.farawave-page .setup-detail-card {
-  padding: 20px;
-}
-
-.farawave-page .setup-detail-card h4 {
-  font-size: 12px;
-}
-
-.farawave-page .setup-detail-card p,
-.farawave-page .setup-detail-card ol,
-.farawave-page .setup-detail-card ul {
-  font-size: 13px;
-  line-height: 1.75;
-}
-
-.farawave-page .component-legend {
-  column-gap: 34px;
-}
-
-.farawave-page .component-legend li {
-  margin-bottom: 7px;
-}
-
-.farawave-page .variables-tested {
-  margin: 16px 0 0;
-  padding: 14px;
-}
-
-.farawave-page .variables-tested ul {
-  gap: 8px 18px;
-}
-
 .stage-image-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -745,14 +451,7 @@
 }
 
 @media (max-width: 900px) {
-  .archive-case-grid,
-  .farawave-page .archive-case-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .fixture-explainer,
-  .setup-detail-grid,
-  .farawave-page .setup-detail-grid {
+  .archive-case-grid {
     grid-template-columns: 1fr;
   }
 
@@ -770,10 +469,6 @@
     grid-template-columns: 1fr;
   }
 
-  .farawave-page .archive-case-grid {
-    grid-template-columns: 1fr;
-  }
-
   .archive-meta div {
     grid-template-columns: 1fr;
     gap: 4px;
@@ -783,24 +478,6 @@
     flex-direction: column;
     gap: 8px;
     align-items: center;
-  }
-
-  .fixture-explainer {
-    grid-template-columns: 1fr;
-  }
-
-  .setup-detail-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .farawave-page .setup-detail-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .variables-tested ul,
-  .component-legend {
-    columns: 1;
-    grid-template-columns: 1fr;
   }
 
   .stage-image-grid {
@@ -817,16 +494,13 @@
 }
 
 @media (max-width: 640px) {
-  .archive-main,
-  .farawave-page .archive-main {
+  .archive-main {
     width: calc(100% - 28px);
     padding-bottom: 70px;
   }
 
   .archive-copy-block,
-  .farawave-page .archive-copy-block,
-  .evidence-card,
-  .farawave-page .evidence-card {
+  .evidence-card {
     padding: 16px;
   }
 
@@ -844,21 +518,9 @@
     grid-template-rows: minmax(220px, auto) auto;
   }
 
-  .component-legend {
-    columns: 1;
-  }
 }
 
 @media (max-width: 1180px) and (min-width: 901px) {
-  .farawave-page .archive-main {
-    width: min(1120px, calc(100% - 36px));
-  }
-
-  .farawave-page .archive-case-grid {
-    grid-template-columns: minmax(330px, .42fr) minmax(0, .58fr);
-    gap: 24px;
-  }
-
   .stage-image-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -939,14 +601,6 @@
     min-height: 0;
   }
 
-  .farawave-page .archive-copy-block p,
-  .farawave-page .archive-bullets,
-  .farawave-page .evidence-copy p,
-  .farawave-page .evidence-caption {
-    font-size: 13px;
-    line-height: 1.65;
-  }
-
   .archive-footer {
     padding-bottom: max(20px, env(safe-area-inset-bottom));
     text-align: center;
@@ -954,15 +608,12 @@
 }
 
 @media (max-width: 390px) {
-  .archive-main,
-  .farawave-page .archive-main {
+  .archive-main {
     width: calc(100% - 22px);
   }
 
   .archive-copy-block,
-  .farawave-page .archive-copy-block,
   .evidence-card,
-  .farawave-page .evidence-card,
   .archive-meta,
   .archive-tags {
     padding: 13px;
@@ -970,9 +621,7 @@
 
   .evidence-image-grid figure,
   .patient-comparison-grid figure,
-  .stage-image-grid figure,
-  .setup-detail-card,
-  .fixture-components {
+  .stage-image-grid figure {
     padding: 10px;
   }
 }
